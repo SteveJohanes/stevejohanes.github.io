@@ -442,6 +442,13 @@ export default function Home() {
                 year: "2022",
                 gif: "/assets/spp.jpg",
               },
+              {
+                title: "Chat Bot with AI",
+                desc: "Developed an AI chatbot integrated with a Next.js web application, enabling real-time user interactions and context-aware responses. Utilized the Groq API for efficient natural language processing and dynamic content generation.",
+                stack: ["Nextjs"],
+                year: "2026",
+                gif: "/assets/chatbot.png",
+              },
             ].map((project) => (
               <div
                 key={project.title}
