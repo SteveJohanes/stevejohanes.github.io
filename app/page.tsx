@@ -16,7 +16,7 @@ const PillNav: any = dynamic(() => import("./component/PillNav"), {
 const ShapeGrid: any = dynamic(() => import("./component/ShapeGrid"), {
   ssr: false,
 });
-const RotatingText: any = dynamic(() => import("./component/rotatingtext"), {
+const RotatingText: any = dynamic(() => import("./component/RotatingText"), {
   ssr: false,
 });
 const VariableProximity: any = dynamic(
