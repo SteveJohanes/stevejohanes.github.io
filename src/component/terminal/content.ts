@@ -47,7 +47,7 @@ export const skills: Record<string, string[]> = {
 };
 
 export const contact = {
-  email: 'GANTI_EMAIL_KAMU',
+  email: 'johs9021@gmail.com',
   github: 'https://github.com/SteveJohanes',
-  linkedin: 'GANTI_URL_LINKEDIN',
+  linkedin: 'https://linkedin.com/in/steve-johanes',
 };
