@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0d1117] p-3 sm:p-8">
+    <div className="min-h-screen bg-[#0d1117]">
       <Terminal />
-    </main>
+    </div>
   );
 }
