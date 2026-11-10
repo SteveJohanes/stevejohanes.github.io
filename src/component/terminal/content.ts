@@ -62,19 +62,18 @@ export const projects = [
     en: "Comic reading site with an admin panel (Next.js).",
     id: "Website baca komik dengan admin panel (Next.js).",
   },
+  {
+    name: "kiln",
+    tag: "APP",
+    en: "Kiln is an IRL livestream companion application that brings streaming platform events, OBS integration, and real-time activity monitoring into one unified dashboard.",
+    id: "Kiln adalah aplikasi pendamping livestream IRL yang menggabungkan event dari berbagai platform streaming, integrasi OBS, dan pemantauan aktivitas secara real-time dalam satu dashboard terpadu.",
+  },
 ];
 
 export const skills: Record<string, string[]> = {
   framework: ["Flutter", "Laravel", "Next.js"],
 
-  programming: [
-    "HTML",
-    "CSS",
-    "php",
-    "JavaScript",
-    "TypeScript",
-    "Dart",
-  ],
+  programming: ["HTML", "CSS", "php", "JavaScript", "TypeScript", "Dart"],
 
   design: [
     "Canva",
@@ -292,8 +291,8 @@ export const projectDetails: ProjectDetail[] = [
       id: "ReseKomputer: website toko komputer dengan fitur simulasi rakit PC interaktif yang membantu pengguna memilih komponen, memeriksa kompatibilitas, dan memperkirakan biaya rakitan sebelum membeli.",
     },
     description: {
-      en: "ReseKomputer is a computer store website designed to make it easier for users to explore PC components and plan their own PC builds. It provides product information, component selection, compatibility checking, and price estimation in one place, helping users make better purchasing decisions based on their needs and budget.",
-      id: "ReseKomputer adalah website toko komputer yang dirancang untuk memudahkan pengguna menjelajahi komponen PC dan merencanakan rakitan komputer mereka sendiri. Website ini menyediakan informasi produk, pemilihan komponen, pemeriksaan kompatibilitas, dan estimasi harga dalam satu tempat, sehingga pengguna dapat membuat keputusan pembelian yang lebih sesuai dengan kebutuhan dan anggaran.",
+      en: "ReseKomputer is a computer store website that helps users explore computer components and plan custom PC builds. Its interactive PC builder allows users to select components, check compatibility, and estimate the total build cost.",
+      id: "ReseKomputer adalah website toko komputer yang membantu pengguna menjelajahi komponen komputer dan merencanakan rakitan PC. Fitur simulasi rakit PC interaktif memungkinkan pengguna memilih komponen, memeriksa kompatibilitas, dan memperkirakan total biaya rakitan.",
     },
     goals: [
       {
@@ -375,23 +374,192 @@ export const projectDetails: ProjectDetail[] = [
 
   {
     name: "panelia",
+    title: "Panelia",
     tag: "WEB",
-    status: { en: "in progress", id: "sedang dikembangkan" },
-    summary: {
-      en: "Comic reading website with a comic-panel-inspired home page.",
-      id: "Website baca komik dengan halaman depan bergaya panel komik.",
+    status: {
+      en: "in progress",
+      id: "sedang dikembangkan",
     },
+    summary: {
+      en: "Panelia is a comic reading website featuring a comic-panel-inspired home page, allowing users to explore comic titles through an engaging visual layout.",
+      id: "Panelia adalah website baca komik dengan halaman depan bergaya panel komik yang memungkinkan pengguna menjelajahi berbagai judul komik melalui tampilan visual yang menarik.",
+    },
+    description: {
+      en: "Panelia is a web-based comic reading platform designed to provide an engaging way for users to discover and explore comics.",
+      id: "Panelia adalah platform baca komik berbasis web yang dirancang untuk memberikan pengalaman menarik bagi pengguna dalam menemukan dan menjelajahi berbagai komik.",
+    },
+    goals: [
+      {
+        en: "Provide an engaging and visually appealing platform for discovering comics.",
+        id: "Menyediakan platform yang menarik secara visual untuk menemukan berbagai komik.",
+      },
+      {
+        en: "Organize comic information, including posters, reading status, ratings, genres, and episode counts.",
+        id: "Mengorganisir informasi komik, termasuk poster, status bacaan, rating, genre, dan jumlah episode.",
+      },
+      {
+        en: "Simplify comic content management through an admin panel.",
+        id: "Mempermudah pengelolaan konten komik melalui panel admin.",
+      },
+      {
+        en: "Provide tools for administrators to manage genres and publish announcements.",
+        id: "Menyediakan fitur bagi administrator untuk mengelola genre dan menerbitkan pemberitahuan.",
+      },
+    ],
     features: [
       {
-        en: "Comic cards with poster, status, rating, genres, and episode count",
-        id: "Kartu komik dengan poster, status, rating, genre, dan jumlah episode",
+        en: "Comic catalog with poster images and visual comic cards",
+        id: "Katalog komik dengan gambar poster dan kartu komik visual",
       },
       {
-        en: "Admin panel for comics, genres, and announcements",
-        id: "Admin panel untuk komik, genre, dan pemberitahuan",
+        en: "Comic reading status, ratings, genres, and episode counts",
+        id: "Informasi status bacaan, rating, genre, dan jumlah episode komik",
       },
-      { en: "Admin login", id: "Login admin" },
+      {
+        en: "Comic-panel-inspired home page design",
+        id: "Desain halaman depan bergaya panel komik",
+      },
+      {
+        en: "Admin panel for managing comic content",
+        id: "Panel admin untuk mengelola konten komik",
+      },
+      {
+        en: "Genre management",
+        id: "Pengelolaan genre komik",
+      },
+      {
+        en: "Announcement management",
+        id: "Pengelolaan pemberitahuan",
+      },
+      {
+        en: "Admin authentication and login",
+        id: "Autentikasi dan login admin",
+      },
     ],
-    stack: ["Next.js", "React", "Firebase", "Cloudinary"],
+    stack: [],
+    stackGroups: [
+      {
+        label: { en: "Frontend", id: "frontend" },
+        items: ["Next.js", "React"],
+      },
+      {
+        label: {
+          en: "Backend & Authentication",
+          id: "backend & authentication",
+        },
+        items: ["Firebase"],
+      },
+      {
+        label: { en: "Image Storage & Management", id: "penyimpanan gambar" },
+        items: ["Cloudinary"],
+      },
+    ],
+    stackNote: {
+      en: "Built with Next.js and React for the frontend, Firebase for backend services and authentication, and Cloudinary for image storage and management.",
+      id: "Dikembangkan menggunakan Next.js dan React untuk frontend, Firebase untuk layanan backend dan autentikasi, serta Cloudinary untuk penyimpanan dan pengelolaan gambar.",
+    },
+    images: [
+      {
+        src: "/assets/panelia1.png",
+        alt: {
+          en: "Panelia comic reading website home page",
+          id: "Halaman utama website baca komik Panelia",
+        },
+      },
+    ],
+  },
+
+  {
+    name: "kiln",
+    title: "Kiln",
+    tag: "APP",
+    status: {
+      en: "in progress",
+      id: "sedang dikembangkan",
+    },
+    summary: {
+      en: "Kiln is an IRL livestream companion application that brings streaming platform events, OBS integration, and real-time activity monitoring into one unified dashboard.",
+      id: "Kiln adalah aplikasi pendamping livestream IRL yang menggabungkan event dari berbagai platform streaming, integrasi OBS, dan pemantauan aktivitas secara real-time dalam satu dashboard terpadu.",
+    },
+    description: {
+      en: "Kiln is a livestream companion platform designed to help streamers monitor and manage their live streaming activities. It connects multiple streaming platforms, processes incoming events in real time, and provides a centralized dashboard for monitoring stream interactions. The application also integrates with OBS Studio and provides a stream overlay to display live events.",
+      id: "Kiln adalah platform pendamping livestream yang dirancang untuk membantu streamer memantau dan mengelola aktivitas siaran langsung. Aplikasi ini menghubungkan berbagai platform streaming, memproses event yang masuk secara real-time, dan menyediakan dashboard terpusat untuk memantau interaksi selama livestream. Kiln juga terintegrasi dengan OBS Studio dan menyediakan stream overlay untuk menampilkan event secara langsung.",
+    },
+    goals: [
+      {
+        en: "Provide a centralized dashboard for monitoring livestream activities across multiple platforms.",
+        id: "Menyediakan dashboard terpusat untuk memantau aktivitas livestream dari berbagai platform.",
+      },
+      {
+        en: "Unify streaming events from platforms such as YouTube, TikTok, Twitch, and Kick.",
+        id: "Menggabungkan event streaming dari platform seperti YouTube, TikTok, Twitch, dan Kick.",
+      },
+      {
+        en: "Simplify stream management through OBS Studio integration.",
+        id: "Mempermudah pengelolaan livestream melalui integrasi dengan OBS Studio.",
+      },
+      {
+        en: "Display live events through a stream overlay with real-time updates.",
+        id: "Menampilkan event livestream melalui stream overlay dengan pembaruan secara real-time.",
+      },
+    ],
+    features: [
+      {
+        en: "Centralized dashboard for monitoring livestream activities",
+        id: "Dashboard terpusat untuk memantau aktivitas livestream",
+      },
+      {
+        en: "Multi-platform streaming integration for YouTube, TikTok, Twitch, and Kick",
+        id: "Integrasi streaming multi-platform untuk YouTube, TikTok, Twitch, dan Kick",
+      },
+      {
+        en: "Real-time event processing and synchronization",
+        id: "Pemrosesan dan sinkronisasi event secara real-time",
+      },
+      {
+        en: "YouTube OAuth authentication and live chat integration",
+        id: "Autentikasi YouTube OAuth dan integrasi live chat",
+      },
+      {
+        en: "OBS Studio connection and stream status monitoring",
+        id: "Koneksi OBS Studio dan pemantauan status streaming",
+      },
+      {
+        en: "Stream overlay with real-time event updates",
+        id: "Stream overlay dengan pembaruan event secara real-time",
+      },
+      {
+        en: "WebSocket-based real-time communication",
+        id: "Komunikasi real-time berbasis WebSocket",
+      },
+    ],
+    stack: [],
+    stackGroups: [
+      {
+        label: { en: "Mobile Application", id: "aplikasi mobile" },
+        items: ["React Native", "Expo", "Expo Router", "TypeScript"],
+      },
+      {
+        label: { en: "Backend", id: "backend" },
+        items: ["NestJS", "Node.js", "TypeScript"],
+      },
+      {
+        label: { en: "Database & Cache", id: "database & cache" },
+        items: ["PostgreSQL", "Prisma ORM", "Redis"],
+      },
+      {
+        label: { en: "Real-time & Streaming Integration", id: "integrasi real-time & streaming" },
+        items: ["Socket.IO", "OBS WebSocket", "YouTube Data API"],
+      },
+      {
+        label: { en: "Infrastructure & Tools", id: "infrastruktur & tools" },
+        items: ["Docker", "Git", "GitHub"],
+      },
+    ],
+    stackNote: {
+      en: "Built with React Native and Expo for the mobile application, NestJS for the backend, PostgreSQL and Prisma ORM for data management, and Redis with Socket.IO for real-time event processing. Docker supports the development infrastructure, while OBS WebSocket and YouTube Data API provide streaming integrations.",
+      id: "Dikembangkan menggunakan React Native dan Expo untuk aplikasi mobile, NestJS untuk backend, PostgreSQL dan Prisma ORM untuk pengelolaan data, serta Redis dan Socket.IO untuk pemrosesan event secara real-time. Docker digunakan untuk mendukung infrastruktur pengembangan, sedangkan OBS WebSocket dan YouTube Data API menyediakan integrasi streaming.",
+    },
+    
   },
 ];
