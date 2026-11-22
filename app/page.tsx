@@ -87,7 +87,7 @@ const gallery = [
   {
     title: "NewJeans",
     sub: "Poster Konser NewJeans",
-    src: "/assets/poster konser newjeans.png",
+    src: "/assets/newjeans.webp",
   },
 ];
 
